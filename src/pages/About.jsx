@@ -23,17 +23,17 @@ const About = () => {
 
   const team = [
     {
-      name: "Dr. Sarah Johnson",
-      role: "Executive Director",
+      name: "Belgony Nsimba ",
+      role: "Founder and Executive Director",
       bio: "Leading our mission to empower the next generation of scholars through innovative educational programs."
     },
     {
-      name: "Michael Chen",
+      name: "Isabelle Mudimbe",
       role: "Program Director",
       bio: "Overseeing our technical training and career development initiatives."
     },
     {
-      name: "Dr. Maria Rodriguez",
+      name: "Ferdinand Tembo",
       role: "Student Success Coordinator",
       bio: "Ensuring every student receives the support they need to achieve their goals."
     }

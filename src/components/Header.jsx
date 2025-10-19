@@ -26,23 +26,25 @@ const Header = () => {
     <nav className="bg-white shadow-lg fixed w-full z-50">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between h-16">
-          <div className="flex items-center -ml-4">
+          <div className="flex items-center">
             <img
               src={logoImage}
               alt="NextGen Scholars Academy"
-              className="h-8 w-auto mr-3"
+              className="h-6 sm:h-8 w-auto mr-2 sm:mr-3"
             />
+            <div className="w-px h-6 bg-gray-300 mr-2 sm:mr-3"></div>
             <Link
               to="/"
-              className="text-lg font-bold"
+              className="text-sm sm:text-lg font-bold ml-2 sm:ml-0"
               style={{ color: "#1e40af" }}
             >
-              NextGen Scholars Academy
+              <span className="hidden sm:inline">NextGen Scholars Academy</span>
+              <span className="sm:hidden">NextGen</span>
             </Link>
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center space-x-8">
+          <div className="hidden xl:flex items-center space-x-6">
             {navItems.map((item) => (
               <Link
                 key={item.path}
@@ -88,7 +90,7 @@ const Header = () => {
           </div>
 
           {/* Mobile/Tablet menu button */}
-          <div className="lg:hidden flex items-center">
+          <div className="xl:hidden flex items-center">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="text-gray-600 hover:text-blue-600 transition-colors"
@@ -101,7 +103,7 @@ const Header = () => {
 
       {/* Mobile/Tablet Navigation */}
       {isMenuOpen && (
-        <div className="lg:hidden bg-white border-t shadow-lg">
+        <div className="xl:hidden bg-white border-t shadow-lg">
           <div className="px-2 pt-2 pb-3 space-y-1">
             <div className="flex justify-center mb-4">
               <img

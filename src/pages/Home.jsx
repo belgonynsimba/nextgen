@@ -60,7 +60,7 @@ const Home = () => {
 
       {/* Mission Section */}
       <section
-        className="py-20 text-white"
+        className="py-8 text-white"
         style={{
           background: "linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%)",
         }}

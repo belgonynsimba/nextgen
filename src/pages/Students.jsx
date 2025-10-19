@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Contact from "../components/Contact";
+import studentHeroImage from "../assets/images/student_hero.png";
 import {
   GraduationCap,
   Users,
@@ -131,7 +132,7 @@ const Students = () => {
       <section className="relative h-[70vh] overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="/src/assets/images/student_hero..png"
+            src={studentHeroImage}
             alt="Students working together"
             className="w-full h-full object-cover"
             style={{ filter: "contrast(70%)" }}
